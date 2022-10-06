@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Products - Tugas 2</title> <!-- Page title tag -->
+        <link rel= "icon" href="C:\Users\user\Downloads\Logo_ITERA.png"> <!-- Tab Icon tag (should be only png or ico)-->
+        <link rel="stylesheet" type="text/css" href="Product.css">
+    </head>
+
+    <body>
+        <div class="ProductSearchForm">
+            <form class="SearchForm" action="ProductDetails.html" method="get">
+                <h3 id="FormTitle">Product search</h3>
+                <br>
+                <label for="Products">Choose your product</label>
+                <select id="Products" name="ProductType">
+                    <option value="Product1">Product 1</option>
+                    <option value="Product2">Product 2</option>
+                    <option value="Product3">Product 3</option>
+                    <option value="Product4">Product 4</option>
+                    <option value="Product5">Product 5</option>
+                    <option value="Another">Another</option>
+                </select>
+                <label for="ProductID">Enter your product ID</label>
+                <input type="text" name="ProductID" id="ProductID" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="19"> </input>
+                <input type="submit" value="Search">
+            </form>
+        </div>
+    </body>
+</html>
