@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>minggu 4</title> <!-- Page title tag -->
+        <link rel="stylesheet" type="text/css" href="Style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="navheader">
+                    <img src="https://res.cloudinary.com/silv/image/upload/v1663425531/prak/pngwing.com_wlr6vc.webp" width="100" height="100" alt="Gambar saya">
+                    <div class="navheadercap">
+                        <h1>Hai, ini tugas <span>Sultan Ahmad Alfath</span></h1>
+                        <p>Mahasiswa yang ganteng</p>
+                    </div>
+            </div>
+            <ul class="menu">
+                <li><button onclick="darkmode()">Dark Mode</button></li>
+                <li><a href="#">tentang saya</a></li>
+                <li><a href="#">pengalaman kerja</a></li>
+                <li><a href="#">hubungi saya</a></li>
+            </ul>
+        </nav>
+        <h3># tentang saya</h3>
+            <div class="container-hash">
+                <div class="left">
+                    <p>
+                    <img src="S.png" alt="Teks png" class="s-symbol" />
+                    aya adalah mahasiswa S1 Teknik Informatika ITERA.
+                    Saya adalah mahasiswa Institut Teknologi Sumatera Jurusan Teknik Informatika.
+                    Saya sangat menyukai teknologi dan suka belajar hal baru. 
+                    Mampu bekerja dalam tim, berpikir kritis, dan berkomunikasi dengan baik adalah keahlian saya. 
+                    Saya aktif di dalam organisasi yang dapat melatih dan mengembangkan keahlian berkomunikasi dan manajemen saya. 
+                    Fokus saya adalah untuk mempelajari <i>Artificial Intellegence</i>, serta ingin memiliki kontribusi yang besar dalam kemajuan teknologi di kehidupan manusia. <br>
+                    </p>
+                </div>
+                <div class="right">
+                    <figure>
+                        <video width="325vw" height="250vh" poster="https://res.cloudinary.com/silv/image/upload/v1663425531/prak/pngwing.com_wlr6vc.webp" src="https://res.cloudinary.com/silv/video/upload/v1663428862/prak/videoplayback_fbzqpw.mp4" alt="video" controls></video>
+                        <figcaption>video saya</figcaption>
+                    </figure>
+                </div>
+            </div>
+        <h3>#Pengalaman kerja</h3>
+        <div class="table-container">
+            <table>
+                <thead>
+                <tr>
+                    <th rowspan="2">no</th>
+                    <th rowspan="2">posisi</th>
+                    <th colspan="2">waktu</th>
+                </tr>
+                <tr>
+                    <th>mulai</th>
+                    <th>selesai</th>  
+                </tr>
+            </thead>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+            </table>
+        </div>
+        <h3>#Program_Hitung</h3>
+        <div class="container-contact">
+
+            <form action="#" method="get">
+                <input type="text" id="bilangan" placeholder="Masukkan bilangan 1-20"> <br><br>
+                <button onclick="Hitung()"> Hitung </button>
+            </form>
+        </div>
+        <br>
+        <footer>ini akhir</footer>
+    
+    <script>
+        function darkmode(){
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+        function Hitung(){
+            var angka = document.getElementById("bilangan").value
+            if(angka<= 0 || angka >=21){
+                alert("Masukkan angka 1-20");
+            }
+            else{
+                if(angka%2==1){
+                    Fibonacci(hasil, angka*10, 0, 1);   
+                }
+                else{
+                    Faktorial(angka/2)
+                }
+            }
+        }
+        function Fibonacci(final = String(), batas, angka1, angka2){
+            if(angka1+angka2<=batas){
+                var hasil_hitung = angka1+angka2;
+                final+=hasil_hitung.toString();
+                final+=" ";
+                Fibonacci(final, batas, angka2, hasil_hitung);
+                return; //They still executing this. Weird huh..
+            }
+            alert(final);
+        }
+        function Faktorial(angka){ //hasil = perkalian, hasil2 = hasil faktorial
+            var hasil = String();
+            var hasil2 = 1;
+            for(let i = 1; i<=angka; i++){
+                hasil+=i.toString();
+                if(i!=angka){
+                    hasil+="x";
+                }
+                else{
+                    hasil+="=";
+                }
+                hasil2*=i;
+            }
+            alert(hasil+hasil2.toString());
+        }
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,146 @@
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+div.navheader {
+    background-color: hsl(190, 89%, 62%);
+    display: flex;
+    width: 100%;
+    height: 200px;
+    padding-top: 30px;
+}
+
+div.navheader > img{
+    height: 200px;
+    width: 180px;
+    padding-left: 15px;
+}
+
+div.navheader > .navheadercap > h1 > span{
+    color: rgb(32, 130, 205);
+}
+
+div.navheadercap {
+    color: white;
+}
+
+
+div.navheadercap{
+    font: black;
+}
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(13, 119, 200);
+
+
+}
+
+ul.menu > li a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+h3 {
+    color: #fff;
+    background-color: rgb(14, 105, 174);
+    width: fit-content;
+    padding: 5px 15px;
+  }
+
+
+.container-hash {
+   display: flex;
+   justify-content: space-evenly;
+ }
+.container-hash > div.left, .container-hash > div.right {
+    width: 40%;
+  }
+.container-hash div.left{
+    text-align: justify;
+    background-color: #f6f6f6;
+    border-radius: 30px;
+    padding: 10px;
+    font-family: system-ui;
+}
+
+img.s-symbol {
+    float: left;
+    margin: 10px;
+    width: 80px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+
+table {
+  border-collapse: collapse;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+table td,
+table th {
+  padding: 10px;
+}
+table thead {
+  background-color: hsl(190, 89%, 62%);
+  color: #fff;
+}
+
+div.container-contact{
+    background-color: hsl(190, 89%, 62%);
+    border-radius: 30px;
+    padding: 20px 15px;
+    width: 60%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+div.container-contact > form > label{
+    display: block;
+}
+
+div.container-contact > form > p{
+    margin-bottom: 20px;
+}
+
+div.container-contact > form > button{
+    border-radius: 8px;
+    font-family: system-ui;
+    color: #fff;
+    border: none;
+    background-color: rgb(14, 105, 174);
+    width: 90%;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    background-color: #f6f6f6;
+    color: #7690c9;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    margin-top: 50px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
